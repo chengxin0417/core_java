@@ -9,13 +9,14 @@ public class IdNo {
 	}
 
 	public void setPerson(Person person) {
-		
-		if(this.person != null) {
+
+		if (this.person != null) {
 			this.person.setIdNo(null);
 		}
-		
+
 		this.person = person;
 		person.setIdNo(this);
+		
 	}
-
+	
 }

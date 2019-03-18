@@ -9,6 +9,10 @@ public class Student {
 		this.name = name;
 	}
 	
+	public Student() {
+		
+	}
+	
 	//学生说话
 	public void speak() {
 		System.out.println("Hello, my name is " + name);
