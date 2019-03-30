@@ -4,7 +4,7 @@ public class ScoreApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		float score = 59;
+		float score = 59f;
 		if(score == 100) {
 			System.out.println("完美，满分...");
 		}else if(score >= 90) {

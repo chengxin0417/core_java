@@ -1,6 +1,7 @@
 package core_java.array;
 
 import java.util.Arrays;
+
 /**
  * 
  * @author yinchu
@@ -11,6 +12,7 @@ public class WeekArrayDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] weekArray = new int[7];
+		//动态初始化
 		weekArray[0] = 1;
 		weekArray[1] = 2;
 		weekArray[2] = 3;
@@ -19,7 +21,8 @@ public class WeekArrayDemo {
 		weekArray[5] = 6;
 		weekArray[6] = 7;
 		
-		int[] weekendArray = new int[] {6,7};
+		int[] weekendArray = new int[] {6,7};//静态初始化
+		
 		System.out.println(weekArray.length);
 		System.out.println(weekendArray.length);
 		
