@@ -24,7 +24,7 @@ public class EqualsMethodDemo {
 		System.out.println(s1.equals(s3));
 		
 		String ss1 = new String("a");
-		ss1 = ss1.intern();
+		//ss1 = ss1.intern();
 		String ss2 = "a";
 		System.out.println(ss1 == ss2);
 		
