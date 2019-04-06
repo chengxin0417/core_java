@@ -8,7 +8,7 @@ public class ClassC extends ClassA {
 		var1 = 1; // 合法
 		var2 = 2; // 合法
 		//var3 = 3; // 不合法，默认级别只对同一个包下面类开放
-		//var4 = 4; // 合法
+		//var4 = 4; // 不合法
 
 		ClassA a = new ClassA();
 		a.var1 = 11; // 合法
