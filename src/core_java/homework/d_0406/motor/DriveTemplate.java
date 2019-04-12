@@ -1,4 +1,4 @@
-package core_java.homework.d_0406;
+package core_java.homework.d_0406.motor;
 
 public abstract class DriveTemplate {
 	
