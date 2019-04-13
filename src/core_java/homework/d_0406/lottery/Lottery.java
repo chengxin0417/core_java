@@ -23,6 +23,15 @@ public abstract class Lottery {
 		return nums;
 	}
 	
+	private boolean checkExistedNum(int number, int[] nums) {
+		for(int num : nums) {
+			if(num == number) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
 	public abstract void printLotteryNo();
 	
 	public String printNums(int[] nums) {
@@ -37,12 +46,5 @@ public abstract class Lottery {
 		return sb.toString();
 	}
 	
-	private boolean checkExistedNum(int number, int[] nums) {
-		for(int num : nums) {
-			if(num == number) {
-				return false;
-			}
-		}
-		return true;
-	}
+	
 }

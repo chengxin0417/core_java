@@ -6,6 +6,9 @@ public class LotteryDemo {
 		// TODO Auto-generated method stub
 		Lottery doubleColorBall = new DoubleColorBall();
 		doubleColorBall.printLotteryNo();
+		
+		Lottery bigLottery = new BigLottery();
+		bigLottery.printLotteryNo();
 	}
 
 }
