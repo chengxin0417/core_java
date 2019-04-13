@@ -10,18 +10,18 @@ import java.util.Set;
  * @author yinchu
  *
  */
-public class Voter {
+public class VoterV2 {
 
 	public static final int MAX_COUNT = 100; // 最大投票数
 	private static int count; // 记录投票数
-	private static Voter[] voters = new Voter[100]; // 存放所有已经投票的选民
+	private static VoterV2[] voters = new VoterV2[100]; // 存放所有已经投票的选民
 	private String name; // 投票人的姓名
 
-	public Voter() {
+	public VoterV2() {
 
 	}
 
-	public Voter(String name) {
+	public VoterV2(String name) {
 		this.name = name;
 	}
 
@@ -43,8 +43,8 @@ public class Voter {
 	 * @param voter
 	 * @return: false：没有投票；true：已经投票
 	 */
-	private boolean hasVoted(Voter voter) {
-		for(Voter v2 : voters) {
+	private boolean hasVoted(VoterV2 voter) {
+		for(VoterV2 v2 : voters) {
 			if(voter.equals(v2)) {
 				return true;
 			}
@@ -68,7 +68,7 @@ public class Voter {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Voter other = (Voter) obj;
+		VoterV2 other = (VoterV2) obj;
 		if (name == null) {
 			if (other.name != null)
 				return false;

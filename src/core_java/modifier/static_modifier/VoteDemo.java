@@ -13,4 +13,5 @@ public class VoteDemo {
 		v.vote();
 	}
 
+	public void method() {}
 }
