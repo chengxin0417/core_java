@@ -6,13 +6,14 @@ public class Demo {
 		// TODO Auto-generated method stub
 		Feeder feeder = new Feeder();
 		
-		Animail dog = new Dog();
-		Food bone = new Bone();
-		feeder.feed(dog, bone);
-		
-		Animail cat = new Fish();
+		Animail fish = new Fish();
 		Food fodder = new Fodder();
-		feeder.feed(cat, fodder);
+		feeder.feed(fish, fodder);
+		
+		Animail cat = new Cat();
+		
+		Food fishAsFood = new Fish();
+		feeder.feed(cat, fishAsFood);
 	}
 
 }

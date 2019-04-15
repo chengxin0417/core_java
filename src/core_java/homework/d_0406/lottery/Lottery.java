@@ -46,5 +46,16 @@ public abstract class Lottery {
 		return sb.toString();
 	}
 	
+	public String printNums(int[] nums, StringBuffer sb) {
+		for(int i = 0; i < nums.length; i++) {
+			if(i == nums.length-1) {
+				sb.append(nums[i]);
+			}else {
+				sb.append(nums[i]).append(",");
+			}
+		}
+		return sb.toString();
+	}
+	
 	
 }

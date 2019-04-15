@@ -5,7 +5,7 @@ public class VoteDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Voter v;
-		for(int i = 0; i < 2; i++) {
+		for(int i = 0; i < 102; i++) {
 			v = new Voter("张三"+i);
 			v.vote();
 		}
