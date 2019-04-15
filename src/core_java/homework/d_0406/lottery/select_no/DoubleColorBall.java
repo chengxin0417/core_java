@@ -14,6 +14,11 @@ public class DoubleColorBall extends Lottery implements SelectNum {
 				numTimes[num-1]++;
 			}
 		}
+		
+		//TODO:
+		for(int i = 0;i < numTimes.length; i++) {
+			System.out.println((i+1)+"出现"+numTimes[i]+"次...");
+		}
 
 		int max = -1;
 		int min = 9999;

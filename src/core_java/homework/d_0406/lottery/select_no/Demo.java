@@ -13,7 +13,7 @@ public class Demo {
 		}
 		System.out.println("----------------------------");
 		SelectNum sn = new core_java.homework.d_0406.lottery.select_no.DoubleColorBall();
-		int[] hotNums = sn.selectNums(previousNums, 6, true);
+		int[] hotNums = sn.selectNums(previousNums, 2, true);
 		for(int a : hotNums) {
 			System.out.println(a);
 		}

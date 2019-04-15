@@ -19,7 +19,7 @@ public class Lottery {
 				 }
 			}
 		}
-		 System.out.println("max...else...=>"+maxIndex);
+		// System.out.println("max...else...=>"+maxIndex);
 		return maxIndex;
 	}
 	
