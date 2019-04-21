@@ -5,9 +5,9 @@ import java.lang.reflect.Method;
 
 public class ReflexDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		// 测试三种获得class对象的方式以及获得类的完整名字
-		System.out.println("第一种方式获得Person类的类名：" + getClassObject1().getName());
+		System.out.println("第一种方式获得Person类的类名：" + getClassObject1().getSimpleName());
 		System.out.println("第二种方式获得Person类的类名：" + getClassObject2().getName());
 		System.out.println("第三种方式获得Person类的类名：" + getClassObject3().getName());
 		
@@ -41,8 +41,9 @@ public class ReflexDemo {
 	}
 
 	/**
-	 * 有三种方式获得Class对象 2. 直接通过 类名.class 的方式得到,该方法最为安全可靠，程序性能更高，这说明任何一个类都有一个隐含的静态成员变量
-	 * class
+	 * 有三种方式获得Class对象 
+	 * 2. 直接通过类名.class 的方式得到,该方法最为安全可靠，程序性能更高，这说明任何一个类都有一个隐含的静态成员变量class
+	 * 
 	 * 
 	 * @return
 	 */
@@ -51,12 +52,14 @@ public class ReflexDemo {
 	}
 
 	/**
-	 * 有三种方式获得Class对象 3. 通过 Class 对象的 forName() 静态方法来获取，用的最多，但可能抛出
+	 * 有三种方式获得Class对象 
+	 * 3. 通过 Class 类的 forName() 静态方法来获取，用的最多，但可能抛出
 	 * ClassNotFoundException 异常
 	 * 
 	 * @return
+	 * @throws ClassNotFoundException 
 	 */
-	public static Class getClassObject3() {
-		return Person.class;
+	public static Class getClassObject3() throws ClassNotFoundException {
+		return Class.forName("core_java.reflex.Person");
 	}
 }

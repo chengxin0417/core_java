@@ -25,7 +25,7 @@ public class Account {
 	}
 
 	public String getAcccountNo() {
-		return acccountNo;
+		return acccountNo;	
 	}
 
 	public void setAcccountNo(String acccountNo) {
@@ -39,7 +39,7 @@ public class Account {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	
 	public double getAmount() {
 		return amount;
 	}
