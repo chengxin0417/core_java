@@ -7,6 +7,7 @@ public class ClassGenerater {
 		Class c = String.class;
 		Class c1 = Runnable.class;
 		AbsGenerateClassStructure gcs = new GenerateClassStructureImpl();
+		gcs.printClass(c);
 	}
 
 }

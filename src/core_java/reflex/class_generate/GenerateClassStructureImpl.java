@@ -16,6 +16,7 @@ public class GenerateClassStructureImpl extends AbsGenerateClassStructure {
 					.append(" ").append(f.getType().getSimpleName()).append(" ") // 获得属性类型
 					.append(f.getName()).append(";").append(BREAK_LINE).append(BREAK_LINE); // 获得属性名字
 		}
+		
 		return sb.toString();
 	}
 

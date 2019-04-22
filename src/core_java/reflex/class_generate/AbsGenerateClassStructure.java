@@ -64,6 +64,7 @@ public abstract class AbsGenerateClassStructure {
 			obj = (Constructor) obj;
 			modifier = getMofifierName(((Constructor) obj).getModifiers());
 		}
+		
 		return modifier;
 	}
 
